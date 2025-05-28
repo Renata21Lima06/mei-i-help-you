@@ -86,4 +86,4 @@ Este projeto está licenciado sob a **MIT License**. Veja o arquivo `LICENSE` pa
 
 ---
 
-### 💡 Idealizado por estudantes da FATEC Diadema - 2024
+### 💡 Idealizado por Ana Luiza, Bruna Lopez, Renata Lima e Thais Ferreira | FATEC Diadema - 2025
