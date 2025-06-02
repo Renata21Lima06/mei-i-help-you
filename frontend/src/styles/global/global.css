@@ -44,6 +44,8 @@
     --font-size-card-p: 1.5rem; /* 24px */
 }
 
+/* Buttons */
+
 .button-primary-large{
     width: 6.375rem; /* 102px */
     height: 2.5rem; /* 40px */
@@ -54,6 +56,8 @@
     background-color: var(--color-button);
     color: var(--color-button-text);
     border: none;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .button-primary-large:hover{
@@ -70,6 +74,8 @@
     background-color: transparent;
     color: var(--color-button-text);
     border: 2px var(--color-button-hover) solid;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .button-secundary-large:hover{
