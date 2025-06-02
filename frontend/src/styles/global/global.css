@@ -51,9 +51,27 @@
     font-family: var(--font-family-regular-p);
     font-size: var(--font-size-mini-details);
     border-radius: 10px;
+    background-color: var(--color-button);
+    color: var(--color-button-text);
+    border: none;
 }
 
 .button-primary-large:hover{
     background-color: var(--color-button-hover);
-    color: #FFFFFF;
+}
+
+.button-secundary-large{
+    width: 6.375rem; /* 102px */
+    height: 2.5rem; /* 40px */
+    padding: 0.78125rem 2rem;/* 12.5px  32px*/
+    font-family: var(--font-family-regular-p);
+    font-size: var(--font-size-mini-details);
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--color-button-text);
+    border: 2px var(--color-button-hover) solid;
+}
+
+.button-secundary-large:hover{
+    background-color: var(--color-button-hover);
 }
