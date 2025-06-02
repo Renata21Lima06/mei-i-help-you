@@ -12,8 +12,6 @@ header{
     height: 5.25rem; /* 84px */
     padding: 0 5rem; /* 80px */
     margin: 1.5rem 0; /* 80px */
-
-    background-color: var(--background-lading-section);
 }
 
 h1{
@@ -53,4 +51,46 @@ nav{
 .cta{
     padding: 0 5rem; /* 80px */
     margin: 1.5rem 0; /* 80px */
+    width: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+}
+
+.cta-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* 24px */
+}
+
+.cta-text-title{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* 24px */
+}
+
+.cta-text-title > h1{
+    font-size: var(--font-size-h1);
+}
+
+.cta-text-title > p{
+    font-size: var(--font-size-regular-p);
+    font-family: var(--font-family-regular-p);
+}
+
+.cta-text > p{
+    font-size: var(--font-size-regular-p);
+    font-family: var(--font-family-regular-p);
+}
+
+.cta > img{
+    width: 532px;
+    height: 416px;
+}
+
+.buttons-cta{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem; 
 }
