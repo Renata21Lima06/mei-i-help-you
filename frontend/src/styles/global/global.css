@@ -15,9 +15,14 @@
     --color-text-secundary: #A3AED0;
     --color-text-active: #2B3674;
     --color-text-disable: #A3AED0;
+
     --color-icons: #1A00FF;
     --color-right: #1EA83F;
     --color-wrong: #B81414;
+
+    --color-button: #1A00FF;
+    --color-button-disble: #B6B6BD;
+    --color-button-hover: #0F018E;
     
     /* Font Family */
     --font-family-h1: "Inter Black", sans-serif;
@@ -39,3 +44,16 @@
     --font-size-card-p: 1.5rem; /* 24px */
 }
 
+.button-primary-large{
+    width: 6.375rem; /* 102px */
+    height: 2.5rem; /* 40px */
+    padding: 0.78125rem 2rem;/* 12.5px  32px*/
+    font-family: var(--font-family-regular-p);
+    font-size: var(--font-size-mini-details);
+    border-radius: 10px;
+}
+
+.button-primary-large:hover{
+    background-color: var(--color-button-hover);
+    color: #FFFFFF;
+}
