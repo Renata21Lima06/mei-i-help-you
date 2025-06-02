@@ -19,10 +19,12 @@
     --color-icons: #1A00FF;
     --color-right: #1EA83F;
     --color-wrong: #B81414;
+    --color-text: #000000;
 
     --color-button: #1A00FF;
     --color-button-disble: #B6B6BD;
     --color-button-hover: #0F018E;
+    --color-button-text: #FFFF;
     
     /* Font Family */
     --font-family-h1: "Inter Black", sans-serif;
@@ -44,12 +46,25 @@
     --font-size-card-p: 1.5rem; /* 24px */
 }
 
+a{
+    text-decoration: none;
+    color: var(--color-text);
+    font-family: var(--font-family-medium-p);
+    transition: 0.5s;
+
+}
+
+a:hover{
+    color: var(--color-button-hover);
+    transform: scale(1.02);
+}
+
 /* Buttons */
 
 .button-primary-large{
     width: 6.375rem; /* 102px */
     height: 2.5rem; /* 40px */
-    padding: 0.78125rem 2rem;/* 12.5px  32px*/
+    padding: 0.78125rem 1rem;/* 12.5px  16px*/
     font-family: var(--font-family-regular-p);
     font-size: var(--font-size-mini-details);
     border-radius: 10px;
@@ -67,15 +82,16 @@
 .button-secundary-large{
     width: 6.375rem; /* 102px */
     height: 2.5rem; /* 40px */
-    padding: 0.78125rem 2rem;/* 12.5px  32px*/
+    padding: 0.78125rem 1rem;/* 12.5px  16px*/
     font-family: var(--font-family-regular-p);
     font-size: var(--font-size-mini-details);
     border-radius: 10px;
     background-color: transparent;
-    color: var(--color-button-text);
+    color: var(--color-button-hover);
     border: 2px var(--color-button-hover) solid;
     cursor: pointer;
     transition: 0.5s;
+    text-align: center;
 }
 
 .button-secundary-large:hover{
