@@ -2,6 +2,7 @@ body{
     background-color: var(--background-lading-section);
 }
 
+/* Header */
 header{
     display: flex;
     justify-content: space-between;
@@ -10,8 +11,20 @@ header{
     width: 100%;
     height: 5.25rem; /* 84px */
     padding: 0 5rem; /* 80px */
+    margin: 1.5rem 0; /* 80px */
 
     background-color: var(--background-lading-section);
+}
+
+h1{
+    font-family: var(--font-family-h1);
+}
+
+.logo-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem; /* 32px */
 }
 
 .img-text{
@@ -25,4 +38,19 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem; /* 32px */
+    font-family: var(--font-family-medium-p);
+}
+
+.logar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem; /* 16px */
+}
+
+/* cta */
+.cta{
+    padding: 0 5rem; /* 80px */
+    margin: 1.5rem 0; /* 80px */
 }
