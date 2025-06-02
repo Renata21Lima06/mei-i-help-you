@@ -96,4 +96,5 @@ a:hover{
 
 .button-secundary-large:hover{
     background-color: var(--color-button-hover);
+    color: var(--color-button-text);
 }
