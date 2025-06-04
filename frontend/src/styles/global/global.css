@@ -29,6 +29,7 @@
     /* Font Family */
     --font-family-h1: "Inter Black", sans-serif;
     --font-family-h2: "Inter Extra Bold", sans-serif;
+    --font-family-h3: "Inter Semi Bold", sans-serif;
     --font-family-regular-p: "Inter Regular", sans-serif;
     --font-family-bold-p: "Inter Bold", sans-serif;
     --font-family-medium-p: "Inter Medium", sans-serif;
@@ -37,6 +38,7 @@
     /* Font Size */
     --font-size-h1: 3.75rem; /* 64px */
     --font-size-h2: 2.25rem; /* 36px */
+    --font-size-h3: 1.25rem; /* 36px */
     --font-size-title: 1.625rem; /* 26px */
 
     --font-size-mini-details: 0.75rem; /* 12px */
@@ -64,7 +66,6 @@ a:hover{
 .button-primary-large{
     width: 6.375rem; /* 102px */
     height: 2.5rem; /* 40px */
-    padding: 0.78125rem 1rem;/* 12.5px  16px*/
     font-family: var(--font-family-regular-p);
     font-size: var(--font-size-mini-details);
     border-radius: 10px;
@@ -73,6 +74,7 @@ a:hover{
     border: none;
     cursor: pointer;
     transition: 0.5s;
+    text-align: center;
 }
 
 .button-primary-large:hover{
@@ -82,7 +84,6 @@ a:hover{
 .button-secundary-large{
     width: 6.375rem; /* 102px */
     height: 2.5rem; /* 40px */
-    padding: 0.78125rem 1rem;/* 12.5px  16px*/
     font-family: var(--font-family-regular-p);
     font-size: var(--font-size-mini-details);
     border-radius: 10px;
