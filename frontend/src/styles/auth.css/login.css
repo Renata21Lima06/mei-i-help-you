@@ -1,0 +1,158 @@
+body {
+    background-color: var(--background-lading-section);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.25rem;
+    padding: 0 5rem;
+    margin: 1.5rem 0;
+}
+
+h1 {
+    font-family: var(--font-family-h1);
+}
+
+.logo-links,
+nav,
+.logar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-links {
+    gap: 2rem;
+}
+
+.img-text {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+nav {
+    gap: 2rem;
+    font-family: var(--font-family-medium-p);
+}
+
+.logar {
+    gap: 1rem;
+} 
+
+main{
+    padding: 0 5rem;
+    margin-top: 4.10rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6.25rem;
+}
+
+.img{
+    max-width: 653px;
+}
+
+.img > img{
+    width: 653px;
+    height: 455px;
+}
+
+.forms{
+    width: 53.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.45rem;
+}
+
+.forms > h1{
+    color: var(--color-button);
+    font-family: var(--font-family-h1);
+    font-size: var(--font-size-h2);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input{
+    width: 500px;
+}
+
+.input-container {
+    position: relative;
+    width: fit-content;
+}
+
+.input-container .icon-eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px;
+    cursor: pointer;
+}
+
+.btn-enviar > button{
+    width: 100%;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-select input[type="radio"] {
+    display: none;
+    background-color: var(--color-button);
+}
+
+.profile-select label {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--color-button);
+    font-family: var(--font-family-medium-p);
+    transition: background-color 0.3s;
+}
+
+.profile-select input[type="radio"]:checked + label {
+    background-color: var(--color-button);
+    color: #fff;
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    font-family: var(--font-family-h2);
+}
+
+p {
+    font-family: var(--font-family-regular-p);
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: var(--font-family-h3);
+    font-size: var(--font-size-h3);
+    color: var(--color-text-lading-secundary);
+}
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3125rem;
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
