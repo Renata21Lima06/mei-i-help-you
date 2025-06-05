@@ -23,6 +23,7 @@
 
     --color-button: #1A00FF;
     --color-button-disble: #B6B6BD;
+    --color-button-disble-hover:rgb(139, 139, 147);
     --color-button-hover: #0F018E;
     --color-button-text: #FFFF;
     
@@ -81,6 +82,24 @@ a:hover{
     background-color: var(--color-button-hover);
 }
 
+.button-primary-disable-large{
+    width: 6.375rem; /* 102px */
+    height: 2.5rem; /* 40px */
+    font-family: var(--font-family-regular-p);
+    font-size: var(--font-size-mini-details);
+    border-radius: 10px;
+    background-color: var(--color-button-disble);
+    color: var(--color-button-text);
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.button-primary-disable-large:hover{
+    background-color: var(--color-button-disble-hover);
+}
+
 .button-secundary-large{
     width: 6.375rem; /* 102px */
     height: 2.5rem; /* 40px */
@@ -99,3 +118,24 @@ a:hover{
     background-color: var(--color-button-hover);
     color: var(--color-button-text);
 }
+
+input{
+    border: 1px #808080 solid;
+    width: 314px;
+    height: 38px;
+    border-radius: 10px;
+    outline: none;
+}
+
+input:hover{
+    border: 1px var(--color-button) solid;
+}
+
+input:focus{
+    border: 1px var(--color-button) solid;
+}
+
+label{
+    font-family: var(--font-family-regular-p);
+}
+
