@@ -1,0 +1,42 @@
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.25rem;
+    padding: 0 5rem;
+    margin: 1.5rem 0;
+}
+
+h1 {
+    font-family: var(--font-family-h1);
+}
+
+.logo-links,
+nav,
+.logar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-links {
+    gap: 2rem;
+}
+
+.img-text {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+nav {
+    gap: 2rem;
+    font-family: var(--font-family-medium-p);
+}
+
+.logar {
+    gap: 1rem;
+} 
+
+
