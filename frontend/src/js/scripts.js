@@ -1,3 +1,4 @@
+// Accordeion (index)
 document.querySelectorAll('.accordion-header').forEach(header => {
     header.addEventListener('click', () => {
         const item = header.parentElement;
@@ -5,6 +6,7 @@ document.querySelectorAll('.accordion-header').forEach(header => {
     });
 });
 
+// Mostra Senha (login)
 const senhaInput = document.getElementById('senha');
 const toggleSenha = document.getElementById('toggleSenha');
 
@@ -16,6 +18,7 @@ toggleSenha.addEventListener('click', function () {
         : '../../assets/icons/eye-off.svg';
 });
 
+// Mostra formulário
 function showForm(userType) {
     document.getElementById("meiForm").style.display = "none";
     document.getElementById("contadorForm").style.display = "none";
