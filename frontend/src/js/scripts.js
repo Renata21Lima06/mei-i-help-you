@@ -15,3 +15,14 @@ toggleSenha.addEventListener('click', function () {
         ? '../../assets/icons/eye.svg'
         : '../../assets/icons/eye-off.svg';
 });
+
+function showForm(userType) {
+    document.getElementById("meiForm").style.display = "none";
+    document.getElementById("contadorForm").style.display = "none";
+
+    if (userType === "mei") {
+        document.getElementById("meiForm").style.display = "block";
+    } else if (userType === "contador") {
+        document.getElementById("contadorForm").style.display = "block";
+    }
+}
