@@ -80,6 +80,7 @@ a:hover{
 
 .button-primary-large:hover{
     background-color: var(--color-button-hover);
+    filter: brightness(1.1);
 }
 
 .button-primary-disable-large{
@@ -98,6 +99,7 @@ a:hover{
 
 .button-primary-disable-large:hover{
     background-color: var(--color-button-disble-hover);
+    filter: brightness(1.1);
 }
 
 .button-secundary-large{
@@ -117,6 +119,7 @@ a:hover{
 .button-secundary-large:hover{
     background-color: var(--color-button-hover);
     color: var(--color-button-text);
+    filter: brightness(1.1);
 }
 
 input{
@@ -125,10 +128,12 @@ input{
     height: 38px;
     border-radius: 10px;
     outline: none;
+    transition: 0.5s;
 }
 
 input:hover{
     border: 1px var(--color-button) solid;
+    filter: brightness(1.0);
 }
 
 input:focus{
