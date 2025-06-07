@@ -30,8 +30,8 @@
             </nav>
         </div>
         <div class="logar">
-            <a href="./frontend/src/pages/auth/login.html">Log In</a>
-            <a href="./frontend/src/pages/auth/cadastro.html"><button class="button-primary-large" type="button">Cadastre-se</button></a>
+            <a href="./login.html">Log In</a>
+            <a href="./cadastro.html"><button class="button-primary-large" type="button">Cadastre-se</button></a>
         </div>
     </header>
     <main>
@@ -46,7 +46,10 @@
             </div>
         </div>
         <div id="meiForm" class="form-container">
-            <h3>Cadastro MEI</h3>
+            <div class="title">
+                <h3>Cadastro MEI</h3>
+            </div>
+            
             <form id="formMei">
                 <label for="cnpjMei">CNPJ:</label>
                 <input type="text" id="cnpjMei" name="cnpjMei" required>
@@ -69,11 +72,13 @@
                 <label for="senhaMei">Senha:</label>
                 <input type="password" id="senhaMei" name="senhaMei" required>
 
-                <button type="button" onclick="submitForm('mei')">Cadastrar MEI</button>
-            </form>
+                <button type="button" class="button-primary-large" onclick="submitForm('mei')">Cadastrar MEI</button>
+            </form> 
         </div>
         <div id="contadorForm" class="form-container" style="display: none;">
-            <h3>Cadastro Contador</h3>
+            <div class="title">
+                <h3>Cadastro Contador</h3>
+            </div>
             <form id="formContador">
                 <label for="nomeContador">Nome:</label>
                 <input type="text" id="nomeContador" name="nomeContador" required>
@@ -99,7 +104,7 @@
                 <label for="senhaContador">Senha:</label>
                 <input type="password" id="senhaContador" name="senhaContador" required>
 
-                <button type="button" onclick="submitForm('contador')">Cadastrar Contador</button>
+                <button type="button" class="button-primary-large" onclick="submitForm('contador')">Cadastrar Contador</button>
             </form>
         </div>
     </main>
