@@ -127,6 +127,11 @@ nav {
     filter: brightness(1.7);
 }
 
+.jaCadastro > p{
+    text-align: center;
+    font-family: var(--font-family-light-p);
+}
+
 h3{
     font-family: var(--font-family-h3);
 }
