@@ -1,0 +1,22 @@
+.dashboard-container {
+    display: flex;
+    height: 100vh; 
+}
+
+/* Menu lateral */
+.sidebar {
+    width: 18rem;
+    background-color: var(--background-nav);
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    border-radius: 0 0 1rem 1rem;
+}
+
+/* Conteúdo principal */
+.main-content {
+    flex: 1; 
+    background-color: var(--background-main);
+    padding: 2rem;
+    overflow-y: auto;
+}
+
