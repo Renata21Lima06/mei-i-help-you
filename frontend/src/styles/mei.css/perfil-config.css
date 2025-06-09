@@ -26,6 +26,10 @@
     align-items: center;
 }
 
+.dashboard-home{
+    border-bottom: 0.125rem solid #e8eaee;
+}
+
 a > img{
     width: 1.60rem;
     height: auto;
