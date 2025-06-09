@@ -12,6 +12,27 @@
     border-radius: 0 0 1rem 1rem;
 }
 
+
+.nav-itens{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+.menu-item{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+a > img{
+    width: 1.60rem;
+    height: auto;
+}
+
+
+
 /* Conteúdo principal */
 .main-content {
     flex: 1; 
