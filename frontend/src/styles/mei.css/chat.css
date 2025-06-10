@@ -3,13 +3,103 @@
     height: 100vh; 
 }
 
-/* Menu lateral */
 .sidebar {
     width: 18rem;
     background-color: var(--background-nav);
     padding: 1rem;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 1rem 1rem;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.title h2 {
+    font-size: 1.4rem;
+    color: #1a1a3d;
+    padding-left: 0.5rem;
+}
+
+.nav-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+h3 {
+    font-size: 0.9rem;
+    color: #222;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 0.8rem;
+    color: #9fa5b5;
+    text-decoration: none;
+    position: relative;
+    border-radius: 0.5rem;
+    transition: background 0.2s ease;
+}
+
+.menu-item:hover {
+    background-color: #eef1f8;
+}
+
+.menu-item img {
+    width: 1.5rem;
+    height: auto;
+}
+
+.menu-item.active {
+    color: #2b2b78;
+    font-weight: 600;
+}
+
+.menu-item.active .indicator {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 1.5rem;
+    background-color: blue;
+    border-radius: 5px 0 0 5px;
+}
+
+.dashboard-home,
+.guia-mei,
+.funcionalidades,
+.configuracao {
+    border-bottom: 1px solid #e8eaee;
+    padding-bottom: 1rem;
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.title{
+    margin-top: 1rem;
+}
+
+h3{
+    font-family: var(--font-family-medium-p);
+}
+
+h2{
+    font-family: var(--font-family-h2);
+    font-size: var(--font-size-h2);
+}
+
+p{
+    font-family: var(--font-family-medium-p);
+    font-size: var(--font-size-regular-p);
 }
 
 /* Conteúdo principal */
@@ -19,4 +109,3 @@
     padding: 2rem;
     overflow-y: auto;
 }
-
