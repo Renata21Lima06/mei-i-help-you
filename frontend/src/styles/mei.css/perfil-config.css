@@ -26,13 +26,6 @@
     margin-top: 2.5rem;
 }
 
-h3 {
-    font-size: 0.9rem;
-    color: #222;
-    margin-bottom: 0.6rem;
-    font-weight: 600;
-}
-
 .menu-item {
     display: flex;
     align-items: center;
@@ -108,4 +101,179 @@ p{
     background-color: var(--background-main);
     padding: 2rem;
     overflow-y: auto;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard{
+    background-color: var(--background-nav);
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 90vh;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.img-perfil > img{
+    border-radius: 50%;
+    width: 8rem;
+}
+
+.profile{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    background-color: var(--background-nav);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+#formMei, .alterar-senha{
+    display: grid;
+    align-items: center;
+    justify-items:flex-start;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem; 
+    width: 100%;
+}
+
+#formMei > div, .alterar-senha > div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Bio{
+    display: flex;
+    flex-direction: column;
+}
+
+.Bio > input{
+    width: 90%;
+    height: 16vh;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1100;
+}
+
+
+@media (min-width: 64.01rem) {
+    .dashboard-container {
+        display: flex;
+    }
+
+    .sidebar {
+        position: relative;
+        left: 0;
+        width: 16rem;
+        height: auto;
+    }
+
+    .main-content {
+        flex: 1;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 85rem) {
+    .dashboard {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        height: 1200px;
+    }
+
+    .forms {
+        width: 100%;
+    }
+
+    #formMei {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .alterar-senha {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 64rem) {
+    .sidebar {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        height: 100%;
+        width: 16rem;
+        background-color: var(--background-nav, #fff);
+        transition: left 0.3s ease-in-out;
+        z-index: 1000;
+        padding-top: 3rem;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .close-btn {
+        display: block;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 64rem) {
+    #formMei,
+    .alterar-senha {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-container {
+        display: block;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+
+    .top{
+        margin-top: 2rem;
+    }
 }
