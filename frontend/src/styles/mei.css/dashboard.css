@@ -100,29 +100,19 @@ p{
     flex: 1; 
     background-color: var(--background-main);
     padding: 2rem;
-    overflow-y: auto;
+    overflow-y: auto
 }
 
 .main-content{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .top{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.dashboard{
-    border-radius: 1rem;
-    padding: 2rem;
-    height: 90vh;
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
 }
 
 .img-perfil > img{
@@ -150,6 +140,71 @@ p{
     left: 1rem;
     z-index: 1100;
 }
+
+.dashboard {
+    padding: 2rem;
+    height: 90vh;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem; 
+    height: 100vh;
+}
+
+.cards-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    padding: 1rem;
+    background-color: var(--background-nav);
+    border-radius: 1.5rem;
+    width: 22.375rem; 
+    height: 6.625rem;  
+}
+
+.graficos,
+.tasks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grafico-barras {
+    padding: 1rem;
+    background-color: var(--background-nav);
+    border-radius: 1.5rem;
+    width: 87.5rem;   
+    height: 22.375rem; 
+}
+
+.grafico-pizza {
+    padding: 1rem;
+    background-color: var(--background-nav);
+    border-radius: 1.5rem;
+    width: 43.75rem;  
+    height: 22.375rem; 
+}
+
+.calendario {
+    width: 56.25rem;  
+    height: 23.0625rem; 
+    padding: 1rem;
+    background-color: var(--background-nav);
+    border-radius: 1.5rem;
+}
+
+.to-do {
+    padding: 1rem;
+    background-color: var(--background-nav);
+    border-radius: 1.5rem;
+    height: 23.0625rem; 
+    width: 75rem;     
+}
+
+
 
 
 @media (min-width: 64.01rem) {
