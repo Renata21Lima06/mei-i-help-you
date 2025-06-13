@@ -154,6 +154,79 @@ p{
 }
 
 
+.colunas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 85%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 0.5rem;
+}
+
+.card {
+    background-color: var(--background-nav);
+    border-radius: 1rem;
+    padding: 2rem;
+    height: auto;
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px #1A00FF12;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.title > p{
+    font-family: var(--font-family-light-p);
+    color: var(--color-text-lading-secundary);
+}
+
+.img > img{
+    width: 69px;
+    height: 69px;
+}
+
+.right{
+    display: flex;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.right > img {
+    width: 24px;
+    height: 24px;
+}
+
+.ultimas-publicacoes > button{
+    padding: 1rem 1.5rem;
+    background-color: var(--background-nav);
+    font-family: var(--font-family-medium-p);
+    cursor: pointer;
+    border-radius: 1rem;
+    border: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+} 
 
 @media (min-width: 64.01rem) {
     .dashboard-container {
