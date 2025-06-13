@@ -139,12 +139,27 @@
                     <div class="calendario">
                     </div>
                     <div class="to-do">
-                        
+                        <section class="todo-list">
+                            <h2>Minha To-Do List</h2>
+
+                            <!-- Formulário para adicionar nova tarefa -->
+                            <div class="todo-input">
+                            <input type="text" id="todoText" placeholder="Digite a tarefa..." />
+                            <input type="date" id="todoDate" />
+                            <button id="addTaskBtn">Adicionar</button>
+                            </div>
+
+                            <!-- Lista de tarefas -->
+                            <ul id="taskList" class="task-list">
+                            <!-- As tarefas vão aparecer aqui -->
+                            </ul>
+                        </section>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-    <script src="../../js/scripts.js"></script>
+    
+    <script src="../../js/tasks.js"></script>
 </body>
 </html>
