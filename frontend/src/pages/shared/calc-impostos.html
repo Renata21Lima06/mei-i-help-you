@@ -101,8 +101,118 @@
                     <img src="../../assets/img/Avatar.png" alt="imagem de perfil">
                 </div>
             </div>
+            <div class="content">
+                <div class="textH1">
+                    <h1>Escolha uma Calculadora</h1>
+                </div>
+                <div class="menu-opcoes">
+                    <div class="menu-box active" data-target="calc-das">
+                        <p>DAS</p>
+                        <p>Calcule o valor mensal do boleto com base na sua atividade. </p>
+                    </div>
+                    <div class="menu-box" data-target="calc-atraso">
+                        <p>Atraso do DAS</p>
+                        <p>Simule o valor atualizado do DAS com multa</p>
+                    </div>
+                    <div class="menu-box" data-target="calc-faturamento">
+                        <p>Faturamento</p>
+                        <p>Acompanhe seu faturamento acumulado e veja se ainda está dentro do limite anual do MEI.</p>
+                    </div>
+                    <div class="menu-box" data-target="calc-inss">
+                        <p>Contribuição INSS</p>
+                        <p>Veja quanto contribui mensalmente ao INSS como MEI e simule quanto tempo falta para se aposentar ou ter direito a benefícios previdenciários.</p>
+                    </div>
+                </div>
+
+                <div class="conteudo-container">
+                    <div id="calc-das" class="calc-content active">
+                        <h3>Calculadora DAS</h3>
+                        <label>Tipo de atividade:</label>
+                        <select id="atividade">
+                            <option value="67">Comércio ou Indústria (R$67,00)</option>
+                            <option value="71">Serviços (R$71,00)</option>
+                            <option value="72">Comércio + Serviços (R$72,00)</option>
+                        </select>
+                        <button onclick="calcularDAS()">Calcular</button>
+                        <div class="resultado" id="resultado-das"></div>
+                    </div>
+
+                    <div id="calc-atraso" class="calc-content">
+                        <h3>Multa e Juros (DAS em Atraso)</h3>
+                        <label>Valor original (R$):</label>
+                        <input type="number" id="valorOriginal" />
+                        <label>Meses de atraso:</label>
+                        <input type="number" id="mesesAtraso" />
+                        <button onclick="calcularMulta()">Calcular</button>
+                        <div class="resultado" id="resultado-atraso"></div>
+                    </div>
+
+                    <div id="calc-faturamento" class="calc-content">
+                        <h3>Faturamento x Limite</h3>
+                        <label>Total faturado no ano (R$):</label>
+                        <input type="number" id="faturamento" />
+                        <button onclick="calcularFaturamento()">Calcular</button>
+                        <div class="resultado" id="resultado-faturamento"></div>
+                    </div>
+
+                    <div id="calc-inss" class="calc-content">
+                        <h3>Simulação de Contribuição INSS</h3>
+                        <label>Meses contribuídos:</label>
+                        <input type="number" id="mesesContribuidos" />
+                        <button onclick="calcularINSS()">Calcular</button>
+                        <div class="resultado" id="resultado-inss"></div>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
+
+      <script>
+    const boxes = document.querySelectorAll('.menu-box');
+    const contents = document.querySelectorAll('.calc-content');
+
+    boxes.forEach(box => {
+      box.addEventListener('click', () => {
+        boxes.forEach(b => b.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+
+        box.classList.add('active');
+        document.getElementById(box.dataset.target).classList.add('active');
+      });
+    });
+
+    function calcularDAS() {
+      const valor = document.getElementById("atividade").value;
+      document.getElementById("resultado-das").innerText = `Valor do DAS: R$ ${valor},00`;
+    }
+
+    function calcularMulta() {
+      const original = parseFloat(document.getElementById("valorOriginal").value);
+      const meses = parseInt(document.getElementById("mesesAtraso").value);
+      if (!isNaN(original) && !isNaN(meses)) {
+        const multa = original * 0.02; // 2%
+        const juros = original * 0.01 * meses; // 1% ao mês
+        const total = original + multa + juros;
+        document.getElementById("resultado-atraso").innerText = `Valor com multa e juros: R$ ${total.toFixed(2)}`;
+      }
+    }
+
+    function calcularFaturamento() {
+      const valor = parseFloat(document.getElementById("faturamento").value);
+      const limite = 81000;
+      if (!isNaN(valor)) {
+        const restante = limite - valor;
+        const mensagem = restante >= 0 ? `Você ainda pode faturar R$ ${restante.toFixed(2)}.` : `Você ultrapassou o limite em R$ ${Math.abs(restante).toFixed(2)}.`;
+        document.getElementById("resultado-faturamento").innerText = mensagem;
+      }
+    }
+
+    function calcularINSS() {
+      const meses = parseInt(document.getElementById("mesesContribuidos").value);
+      const totalPago = meses * 66; // valor de INSS aproximado para MEI
+      document.getElementById("resultado-inss").innerText = `Total contribuído: R$ ${totalPago.toFixed(2)}`;
+    }
+  </script>
 
     <script src="../../js/scripts.js"></script>
 </body>
