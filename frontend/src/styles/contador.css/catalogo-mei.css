@@ -154,6 +154,89 @@ p{
 }
 
 
+.filtros {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.filtros > input[type="text"] {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 0.8rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+.filtros-secundarios {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.campo input {
+    padding: 0.6rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    min-width: 150px;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card-mei {
+    border: 1px solid #d3d3f3;
+    border-radius: 1rem;
+    padding: 1rem 1.2rem;
+    box-shadow: 0 0 8px rgba(0,0,0,0.03);
+}
+
+.card-mei h3 {
+    color: #1a1aff;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.card-mei p {
+    color: #555;
+    margin: 0.2rem 0;
+}
+
+.situacao {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status {
+    font-size: 0.9rem;
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.status img {
+    width: 1rem;
+    height: 1rem;
+}
+
+
 
 @media (min-width: 64.01rem) {
     .dashboard-container {
