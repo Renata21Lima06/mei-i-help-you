@@ -26,13 +26,6 @@
     margin-top: 2.5rem;
 }
 
-h3 {
-    font-size: 0.9rem;
-    color: #222;
-    margin-bottom: 0.6rem;
-    font-weight: 600;
-}
-
 .menu-item {
     display: flex;
     align-items: center;
@@ -72,7 +65,7 @@ h3 {
 }
 
 .dashboard-home,
-.guia-mei,
+.guia-Contador,
 .funcionalidades,
 .configuracao {
     border-bottom: 1px solid #e8eaee;
@@ -97,7 +90,7 @@ h2{
     font-size: var(--font-size-h2);
 }
 
-p{
+p, small, strong{
     font-family: var(--font-family-medium-p);
     font-size: var(--font-size-regular-p);
 }
@@ -108,4 +101,317 @@ p{
     background-color: var(--background-main);
     padding: 2rem;
     overflow-y: auto;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard{
+    background-color: var(--background-nav);
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 90vh;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.img-perfil > img{
+    border-radius: 50%;
+    width: 8rem;
+}
+
+.profile{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    background-color: var(--background-nav);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1100;
+}
+
+.chat-container {
+    display: flex;
+    height: 100vh;
+}
+
+.contatos {
+    width: 20%;
+    background-color: #fff;
+    padding: 1rem;
+    border-right: 1px solid #ddd;
+}
+
+.contatos input {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 2rem;
+}
+
+.contatos ul {
+    list-style: none;
+    overflow-y: auto;
+    max-height: 90vh;
+    padding: 0;
+}
+
+.contatos li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    position: relative;
+    flex-direction: column;
+}
+
+.contatos li.ativo {
+    background-color: #eef1f8;
+}
+
+.contatos li small {
+    font-size: 0.75rem;
+    color: #888;
+}
+
+.contatos li span {
+    font-size: 0.7rem;
+    color: #999;
+}
+
+.hora {
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    font-size: 0.7rem;
+    color: #999;
+}
+
+.chat {
+    flex: 1;
+    background-color: #e7ebf5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.chat h4 {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.chat h4 img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+}
+
+
+.mensagens {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.mensagem {
+    max-width: 70%;
+    margin-bottom: 1.2rem;
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.mensagem.recebida {
+    background-color: #ffffff;
+    align-self: flex-start;
+}
+
+.mensagem.enviada {
+    background-color: #dcdcdc;
+    align-self: flex-end;
+}
+
+.mensagem span {
+    font-size: 0.7rem;
+    color: #888;
+    display: block;
+    margin-top: 0.3rem;
+}
+
+
+.entrada {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
+
+.entrada input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+}
+
+.entrada button {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.info {
+    width: 20%;
+    background-color: white;
+    padding: 1rem;
+    border-left: 1px solid #ddd;
+}
+
+.info h3 {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.card {
+    background-color: #f5f6fa;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    margin: 0.5rem 0;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.card span {
+    color: #444;
+    font-weight: 500;
+}
+
+.card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0033cc;
+}
+
+
+
+@media (min-width: 64.01rem) {
+    .dashboard-container {
+        display: flex;
+    }
+
+    .sidebar {
+        position: relative;
+        left: 0;
+        width: 16rem;
+        height: auto;
+    }
+
+    .main-content {
+        flex: 1;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 85rem) {
+    .dashboard {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        height: 1200px;
+    }
+}
+
+
+@media (max-width: 64rem) {
+    .sidebar {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        height: 100%;
+        width: 16rem;
+        background-color: var(--background-nav, #fff);
+        transition: left 0.3s ease-in-out;
+        z-index: 1000;
+        padding-top: 3rem;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .close-btn {
+        display: block;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 64rem) {
+    .dashboard-container {
+        display: block;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+
+    .top{
+        margin-top: 2rem;
+    }
 }
